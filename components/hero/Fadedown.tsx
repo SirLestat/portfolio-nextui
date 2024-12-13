@@ -79,19 +79,20 @@ export function FadeDown() {
         </motion.p>
       </motion.h1>
 
-      <motion.a
-        variants={FADE_LINK_BUTTON}
-        className=" cursor-pointer px-4 py-2 border-1 border-white text-white  hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all "
-      >
-        <Link
-          to="about"
-          smooth={true}
-          duration={1000}
-          className="w-full h-full"
-        >
-          MORE ABOUT ME
-        </Link>
-      </motion.a>
+      <motion.div
+  variants={FADE_LINK_BUTTON}
+  className="cursor-pointer px-4 py-2 border-1 border-white text-white hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all"
+>
+  <Link
+    to="about"
+    smooth={true}
+    duration={1000}
+    className="w-full h-full block"
+  >
+    MORE ABOUT ME
+  </Link>
+</motion.div>
+
     </motion.div>
   );
 }
