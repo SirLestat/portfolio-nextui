@@ -14,6 +14,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        ledger: ["Ledger"],
+        montserratAlt: ['"Montserrat Alternates"'],
+        montserrat: ["Montserrat"],
+      },
     },
   },
   darkMode: "class",

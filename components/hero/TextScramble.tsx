@@ -32,7 +32,7 @@ const TextScramble: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-2xl font-semibold tabular-nums tracking-tight font-[MontserratAlternates-Light]">
+    <div className="text-2xl font-semibold tabular-nums tracking-tight font-montserratAlt">
       <div className="text-center text-[#CC005F]">{text}</div>
     </div>
   );

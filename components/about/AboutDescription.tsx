@@ -1,8 +1,7 @@
-import { article } from "framer-motion/m";
-
 const AboutDescription = () => {
   return (
-    <article className="w-[800px]">
+    <article className="lg:w-[800px] sm:w-[550px] font-montserrat text-[20px] text-justify justify-center">
+      <h2 className="font-montserrat font-bold pt-8 pb-2">Let me introduce myself.</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam
         numquam aspernatur pariatur omnis ipsa nemo ad odit eveniet provident?

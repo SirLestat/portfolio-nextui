@@ -1,16 +1,13 @@
-import { Divider } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { FadeDown } from "./Fadedown";
 import TextScramble from "./TextScramble";
-import { BackgroundBeams } from "./BackgroundBeams";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <BackgroundBeams />
+    <div className="min-h-screen flex flex-col items-center justify-center z-10">
       <TextScramble />
       <FadeDown />
-      <Divider className="bg-[#CC005F] w-4/5 absolute bottom-[-1px]" />
-      
     </div>
   );
 };
