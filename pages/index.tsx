@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <Divider className="bg-[#CC005F] w-4/5 mx-auto" />
+      {/* <Divider className="bg-[#CC005F] w-4/5 mx-auto" /> */}
       <About />
-      <Divider className="bg-[#CC005F] w-4/5 mx-auto" />
+      {/* <Divider className="bg-[#CC005F] w-4/5 mx-auto" /> */}
       <Proyects/>
     </div>
   );
