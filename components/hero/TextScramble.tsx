@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 const TextScramble: React.FC = () => {
   const [text, setText] = useState("");
   const finalText = "HELLO WORLD";
@@ -9,7 +8,7 @@ const TextScramble: React.FC = () => {
   useEffect(() => {
     let iteration = 0;
     const interval = setInterval(() => {
-      setText((prevText) =>
+      setText(() =>
         finalText
           .split("")
           .map((letter, index) => {

@@ -1,7 +1,6 @@
-import { Button } from "@nextui-org/react";
 import { FadeDown } from "./Fadedown";
 import TextScramble from "./TextScramble";
-import { Link } from "react-scroll";
+
 
 const Hero = () => {
   return (
