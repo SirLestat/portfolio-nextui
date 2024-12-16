@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { useState } from "react";
 
 interface ChipProps {
@@ -8,7 +9,7 @@ interface ChipProps {
 
 const TechnologyChip = ({
   label,
-  borderColor = "#FFFFFF",
+  borderColor = "#FFF",
   shadowColor = "#FFF",
 }: ChipProps) => {
   const [isHovered, setIsHovered] = useState(false);

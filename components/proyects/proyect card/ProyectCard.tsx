@@ -1,58 +1,78 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import Image, { StaticImageData } from "next/image";
 import TechnologyChip from "./TechnologyChip";
-import Image from "next/image";
-import card1 from "../../../assets/icons/card/card1.png";
+import ProyectLink from "./ProyectLink";
 
-const ProyectCard = () => {
+interface ChipProps {
+  label: string;
+  borderColor: string;
+  shadowColor?: string;
+}
+
+interface ProyectLinkProps {
+  livePreviewUrl: string;
+  codeUrl: string;
+}
+
+interface ProyectCardProps {
+  src: string | StaticImageData;
+  title: string;
+  description: string;
+  technologies: ChipProps[];
+  links: ProyectLinkProps;
+}
+
+const ProyectCard = ({
+  src,
+  description,
+  title,
+  technologies,
+  links,
+}: ProyectCardProps) => {
   return (
     <Card
       shadow="none"
-      className="bg-transparent w-[390px] h-auto border border-[rgba(255,255,255,0.2)] p-5 rounded-[50px] transition-transform duration-300 ease-in-out hover:scale-[102%] overflow-hidden"
+      className="bg-[#242424cb] w-full sm:w-[90%] md:w-[90%] lg:w-[100%] xl:w-[100%] border border-[#4A4A4A] p-5 rounded-[50px] transition-transform duration-100 ease-in-out hover:scale-[102%] overflow-hidden "
     >
-      {/* Contenedor para la imagen sin padding */}
-      <div className="-m-5 rounded-t-[50px] overflow-hidden h-[250px] relative">
+      {/* Contenedor de imagen */}
+      <div className="-m-5 rounded-t-[50px] overflow-hidden h-[200px] relative ">
         <Image
-          src={card1}
+          src={src}
           alt="Card Image"
           fill
           style={{
-            objectFit: "cover",  // Cambiado a 'cover' para llenar el espacio sin distorsionar
-            objectPosition: "center", // Asegura que la imagen esté centrada desde arriba
-            transform: "scale(1)", // Escala la imagen un 20% más grande
-            transition: "transform 0.3s ease-in-out", // Transición suave al escalar
+            objectFit: "cover", // Llena el espacio sin distorsionar
+            objectPosition: "center",
+
+            transition: "transform 0.3s ease-in-out",
           }}
           className="rounded-t-[50px]"
         />
       </div>
 
       <CardHeader>
-        <h3 className="text-center text-xl font-bold pt-8">TODO LIST</h3>
+        <h3 className="text-center text-xl font-bold pt-8 font-montserratAlt">
+          {title}
+        </h3>
       </CardHeader>
 
-      <CardBody className="flex flex-col pt-0 pb-">
-        <p className="font-montserrat text-justify pb-6">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-          repellendus corrupti aspernatur, beatae hic numquam quod debitis odit
-          modi porro! lorem10
-        </p>
+      <CardBody className="flex flex-col pt-0">
+        <p className="font-montserrat text-justify pb-6">{description}</p>
 
         <div className="flex flex-wrap gap-3">
           {/* Chips */}
-          <TechnologyChip
-            label="React"
-            borderColor="#58C4DC"
-            shadowColor="#58C4DC"
-          />
-          <TechnologyChip
-            label="Material UI"
-            borderColor="#0073E6"
-            shadowColor="#0073E6"
-          />
-          <TechnologyChip
-            label="Formik"
-            borderColor="#0073E6"
-            shadowColor="#0073E6"
-          />
+          {technologies.map((tech) => (
+            <TechnologyChip
+              key={tech.label}
+              borderColor={tech.borderColor}
+              label={tech.label}
+              shadowColor={tech.shadowColor}
+            />
+          ))}
+        </div>
+        
+        <div>
+          <ProyectLink codeUrl={links.codeUrl} livePreviewUrl={links.livePreviewUrl} />
         </div>
       </CardBody>
     </Card>
