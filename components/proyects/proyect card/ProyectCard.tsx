@@ -32,7 +32,7 @@ const ProyectCard = ({
   return (
     <Card
       shadow="none"
-      className="bg-[#242424cb] w-full sm:w-[90%] md:w-[90%] lg:w-[100%] xl:w-[100%] border border-[#4A4A4A] p-5 rounded-[50px] transition-transform duration-100 ease-in-out hover:scale-[102%] overflow-hidden "
+      className="bg-[#2424244f] w-full sm:w-[90%] md:w-[90%] lg:w-[100%] xl:w-[100%] border border-[#4A4A4A] p-5 rounded-[50px] transition-transform duration-100 ease-in-out hover:scale-[102%] overflow-hidden "
     >
       {/* Contenedor de imagen */}
       <div className="-m-5 rounded-t-[50px] overflow-hidden h-[200px] relative ">
@@ -70,9 +70,12 @@ const ProyectCard = ({
             />
           ))}
         </div>
-        
+
         <div>
-          <ProyectLink codeUrl={links.codeUrl} livePreviewUrl={links.livePreviewUrl} />
+          <ProyectLink
+            codeUrl={links.codeUrl}
+            livePreviewUrl={links.livePreviewUrl}
+          />
         </div>
       </CardBody>
     </Card>

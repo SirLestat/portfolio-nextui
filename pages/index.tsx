@@ -1,6 +1,7 @@
 import About from "@/components/about/About";
 import Hero from "@/components/hero/Hero";
 import Proyects from "@/components/proyects/Proyects";
+import Skills from "@/components/skills/Skills";
 import { Divider } from "@nextui-org/react";
 
 export default function Home() {
@@ -11,6 +12,9 @@ export default function Home() {
       <About />
       <Divider className="bg-[#CC005F] w-4/5 mx-auto" /> 
       <Proyects />
+      <Divider className="bg-[#CC005F] w-4/5 mx-auto" />
+      <Skills/>
+
     </div>
   );
 }

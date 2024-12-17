@@ -31,7 +31,7 @@ const TextScramble: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tabular-nums tracking-tight font-montserratAlt">
+    <div className="text-[20px] sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[30px] font-semibold tabular-nums tracking-tight font-montserratAlt">
       <div className="text-center text-[#CC005F]">{text}</div>
     </div>
   );

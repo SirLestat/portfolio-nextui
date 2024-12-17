@@ -66,9 +66,9 @@ export function FadeDown() {
         className={clsx(
           "mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0",
           "text-center font-display font-montserrat drop-shadow-sm font-semibold",
-          "text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[100px]", 
+          "text-[50px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[70px]",
           "tracking-[-0.02em]",
-          "md:leading-[4rem] lg:leading-[4.5rem] xl:leading-[8rem]" ,
+          "md:leading-[4rem] lg:leading-[4.5rem] xl:leading-[8rem]",
           "text-[50px] "
         )}
         variants={FADE_DOWN_ANIMATION_VARIANTS}
@@ -76,7 +76,7 @@ export function FadeDown() {
         Name Lastname
         {/* subtitulo */}
         <motion.p
-          className="mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 leading-relaxed text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] xl:text-[35px] justify-center flex font-ledger font-normal"
+          className="mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 leading-relaxed text-[18px] sm:text-[15px] md:text-[20px] lg:text-[25px] xl:text-[25px] justify-center flex font-ledger font-normal"
           variants={FADE_HOLA_ANIMATION_VARIANTS}
         >
           | FRONTEND DEVELOPER |
@@ -86,13 +86,13 @@ export function FadeDown() {
       {/* Boton*/}
       <motion.div
         variants={FADE_LINK_BUTTON}
-        className=" mt-8 rounded-full cursor-pointer px-6 py-3 sm:px-8 sm:py-3 lg:px-8 lg:py-3 xl:px-8 xl:py-3 border-2 border-white text-white hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all"
+        className=" mt-8 rounded-full cursor-pointer px-6 py-3 sm:px-8 sm:py-3 lg:px-8 lg:py-3 xl:px-6 xl:py-2 border-2 border-white text-white hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all"
       >
         <Link
           to="about"
           smooth={true}
           duration={1000}
-          className=" w-full h-full block  sm:text-[24px] md:text-[25px] lg:text-[25px] xl:text-[25px]"
+          className=" w-full h-full block  text-[12px] sm:text-[12px] md:text-[20px] lg:text-[20px] xl:text-[20px]"
         >
           MORE ABOUT ME
         </Link>

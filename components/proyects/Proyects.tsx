@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ProyectCard from "./proyect card/ProyectCard";
-import rocket from "../../assets/icons/title/rocket.png";
-import card1 from "../../assets/icons/card/card1.png";
+import rocket from "/public/icons/title/rocket.png";
+import card1 from "/public/icons/card/card1.png";
 
 const Proyects = () => {
   return (
@@ -30,7 +30,7 @@ const Proyects = () => {
         width={150}
         height={150}
       />
-      <h2 className=" font-montserratAlt text-[50px] font-semibold text-[#CC005F] pt-8 text-center">
+      <h2 className=" font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F] pt-8 text-center">
         PROYECTS
       </h2>
 
