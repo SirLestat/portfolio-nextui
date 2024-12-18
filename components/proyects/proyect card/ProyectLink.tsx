@@ -1,6 +1,6 @@
 import Image from "next/image";
-import linkIcon from "../../../assets/icons/card/expand-arrows.png";
-import gitHubeIcon from "../../../assets/icons/card/github.png";
+import linkIcon from "/public/icons/card/expand-arrows.png";
+import gitHubeIcon from "/public/icons/card/github.png";
 
 interface ProyectLinkProps {
   livePreviewUrl: string;

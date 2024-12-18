@@ -5,7 +5,7 @@ import card1 from "/public/icons/card/card1.png";
 
 const Proyects = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-8">
+    <div className="min-h-screen flex flex-col items-center justify-center ">
       <style>
         {`
         .rocket {
@@ -22,23 +22,24 @@ const Proyects = () => {
       `}
       </style>
 
-      {/* Imagen y título */}
+      
       <Image
-        className="rocket"
+        className="rocket w-[120px] lg:w-[150px]"
         alt="rocketIcon"
         src={rocket}
         width={150}
         height={150}
+        
       />
-      <h2 className=" font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F] pt-8 text-center">
+      <h2 className=" font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F]  text-center">
         PROYECTS
       </h2>
 
-      {/* Contenedor de las cards con espacio entre ellas y ajuste de ancho */}
-      <div className="pt-20 gap-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-xl mx-auto">
+      
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-xl mx-auto">
         {/* Card 1 */}
         <ProyectCard
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisimet consectetur adipisimet consectetur adipisicing elit."
           src={card1}
           title="TO DO LIST"
           technologies={[
