@@ -4,8 +4,8 @@ const ProfileImg = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       <Image
-        className="rounded-full"
-        src="https://img.freepik.com/foto-gratis/renderizacion-personaje-anime-abeja_23-2150963632.jpg?semt=ais_hybrid"
+        className="rounded-full w-[180px] lg:w-[250px]"
+        src="/profileImage.jpg"
         alt="profile image"
         width={250}
         height={250}
