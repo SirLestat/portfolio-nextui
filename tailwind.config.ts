@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 
+
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -51,6 +53,10 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+
+        success:   "#00c5ff",// Color de éxito personalizado
+        
+        
       },
       fontFamily: {
         ledger: ["Ledger"],
