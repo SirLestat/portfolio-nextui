@@ -1,19 +1,22 @@
 "use client";
 
+
+import rocket from "/public/icons/title/rocket.png";
 import { useState, useEffect } from "react";
-import { Menu, Home, Mail, Settings, User } from "lucide-react";
+import { Menu, Home, Mail, User } from "lucide-react";
+import Image from "next/image";
 
 interface MenuItem {
-  icon: React.ReactNode;
+  icon: React.ReactNode | string;
   href: string;
   label: string;
 }
 
 const menuItems: MenuItem[] = [
-  { icon: <Home className="w-6 h-6" />, href: "/home", label: "Inicio" },
-  { icon: <Mail className="w-6 h-6" />, href: "/contact", label: "Contacto" },
-  { icon: <Settings className="w-6 h-6" />, href: "/settings", label: "Ajustes" },
-  { icon: <User className="w-6 h-6" />, href: "/profile", label: "Perfil" }
+  { icon: <Home className="w-6 h-6" />, href: "#experience", label: "Experiencia" },
+  { icon: <Mail className="w-6 h-6" />, href: "#skills", label: "Skills" },
+  { icon: <Image src={rocket} alt="Ajustes" className="w-6 h-6" />, href: "#projects", label: "Proyectos" },
+  { icon: <User className="w-6 h-6" />, href: "#about", label: "Perfil" }
 ];
 
 const CircularMenu: React.FC = () => {
@@ -50,8 +53,12 @@ const CircularMenu: React.FC = () => {
     };
   }, [isMobile]);
 
-  const handleItemClick = () => {
+  const handleItemClick = (href: string) => {
     setIsOpen(false);
+    const section = document.querySelector(href);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -74,21 +81,33 @@ const CircularMenu: React.FC = () => {
           }}
         >
           {menuItems.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              onClick={handleItemClick}
-              className={`
-                bg-white dark:bg-gray-800 shadow-lg rounded-full p-3
-                hover:bg-gray-100 dark:hover:bg-gray-700
-                transition-transform duration-300 ease-in-out
-                transform hover:scale-125
-                ${isOpen || isHovered ? 'scale-100 translate-y-0' : 'scale-0 translate-y-16'}
-              `}
-              aria-label={item.label}
-            >
-              {item.icon}
-            </a>
+            <div key={index} className="relative group">
+              <a
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleItemClick(item.href);
+                }}
+                className={`
+                  bg-[#181818] dark:bg-gray-800 shadow-lg rounded-full p-3
+                  hover:bg-[#CC005F] dark:hover:bg-gray-700
+                  transition-transform duration-300 ease-in-out
+                  transform hover:scale-125
+                  ${isOpen || isHovered ? 'scale-100 translate-y-0' : 'scale-0 translate-y-16'}
+                  flex items-center
+                `}
+                aria-label={item.label}
+              >
+                {typeof item.icon === "string" ? (
+                  <Image src={item.icon} alt={item.label} className="w-8 h-8" />
+                ) : (
+                  item.icon
+                )}
+              </a>
+              <span className="absolute right-full mr-4 text-white p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center font-montserrat " style={{ top: '8px' }}>
+                {item.label}
+              </span>
+            </div>
           ))}
         </div>
 
@@ -98,7 +117,7 @@ const CircularMenu: React.FC = () => {
           onClick={() => setIsOpen(!isOpen)}
           className={`
             relative
-            bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3
+            bg-[#181818] hover:bg-[#970147] text-white rounded-full p-3
             shadow-lg transition-all duration-200 ease-in-out
             transform ${isOpen ? 'rotate-180' : 'rotate-0'}
             z-10
