@@ -1,10 +1,13 @@
 "use client";
 
-
-import rocket from "/public/icons/title/rocket.png";
+import rocket1 from "/public/icons/title/rocket1.png";
 import { useState, useEffect } from "react";
 import { Menu, Home, Mail, User } from "lucide-react";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
+import user from "/public/icons/title/user.png";
+import code from "/public/icons/title/code.png";
+import  briefcase1  from "/public/icons/title/briefcase1.png";
 
 interface MenuItem {
   icon: React.ReactNode | string;
@@ -13,10 +16,33 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { icon: <Home className="w-6 h-6" />, href: "#experience", label: "Experiencia" },
-  { icon: <Mail className="w-6 h-6" />, href: "#skills", label: "Skills" },
-  { icon: <Image src={rocket} alt="Ajustes" className="w-6 h-6" />, href: "#projects", label: "Proyectos" },
-  { icon: <User className="w-6 h-6" />, href: "#about", label: "Perfil" }
+  {
+    icon: <Image src={briefcase1} alt="Experiencia" className="w-6 h-6" />,
+    href: "experience",
+    label: "Experiencia",
+  },
+
+  { icon: <Image src={code} alt="Habilidades" className="w-6 h-6" />, href: "skills", label: "Habilidades" },
+
+  {
+    icon: <Image src={rocket1} alt="Proyectos" className="w-6 h-6" />,
+    href: "projects",
+    label: "Proyectos",
+  },
+
+  {
+    icon: (
+      <Image
+        src={user}
+        width={150}
+        height={150}
+        alt="Imagen de perfil"
+        className="w-6 h-6 "
+      />
+    ),
+    href: "about",
+    label: "Perfil",
+  },
 ];
 
 const CircularMenu: React.FC = () => {
@@ -53,47 +79,46 @@ const CircularMenu: React.FC = () => {
     };
   }, [isMobile]);
 
-  const handleItemClick = (href: string) => {
-    setIsOpen(false);
-    const section = document.querySelector(href);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <div 
+    <div
       className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-50"
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
     >
       <div className="relative">
         {/* Menú Items */}
-        <div 
+        <div
           className={`
             absolute bottom-0 right-0 
             flex flex-col-reverse items-center gap-4
             transition-all duration-500 ease-in-out
-            ${isOpen || isHovered ? 'opacity-100 visible' : 'opacity-0 invisible'}
+            ${
+              isOpen || isHovered
+                ? "opacity-100 visible"
+                : "opacity-0 invisible"
+            }
           `}
           style={{
-            transform: `translateY(-27%)`
+            transform: `translateY(-27%)`,
           }}
         >
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
-              <a
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleItemClick(item.href);
-                }}
+              <ScrollLink
+                to={item.href}
+                smooth={true}
+                duration={500}
+                onClick={() => setIsOpen(false)}
                 className={`
                   bg-[#181818] dark:bg-gray-800 shadow-lg rounded-full p-3
                   hover:bg-[#CC005F] dark:hover:bg-gray-700
                   transition-transform duration-300 ease-in-out
                   transform hover:scale-125
-                  ${isOpen || isHovered ? 'scale-100 translate-y-0' : 'scale-0 translate-y-16'}
+                  ${
+                    isOpen || isHovered
+                      ? "scale-100 translate-y-0"
+                      : "scale-0 translate-y-16"
+                  }
                   flex items-center
                 `}
                 aria-label={item.label}
@@ -103,8 +128,11 @@ const CircularMenu: React.FC = () => {
                 ) : (
                   item.icon
                 )}
-              </a>
-              <span className="absolute right-full mr-4 text-white p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center font-montserrat " style={{ top: '8px' }}>
+              </ScrollLink>
+              <span
+                className="absolute right-full mr-4 text-white p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center font-montserrat "
+                style={{ top: "8px" }}
+              >
                 {item.label}
               </span>
             </div>
@@ -119,12 +147,16 @@ const CircularMenu: React.FC = () => {
             relative
             bg-[#181818] hover:bg-[#970147] text-white rounded-full p-3
             shadow-lg transition-all duration-200 ease-in-out
-            transform ${isOpen ? 'rotate-180' : 'rotate-0'}
+            transform ${isOpen ? "rotate-180" : "rotate-0"}
             z-10
           `}
           aria-label="Abrir menú"
         >
-          <Menu className={`w-6 h-6 transform transition-transform duration-200 ease-in-out ${isOpen || isHovered ? 'rotate-180' : 'rotate-0'}`} />
+          <Menu
+            className={`w-6 h-6 transform transition-transform duration-200 ease-in-out ${
+              isOpen || isHovered ? "rotate-180" : "rotate-0"
+            }`}
+          />
         </button>
       </div>
     </div>

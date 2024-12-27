@@ -4,7 +4,7 @@ import Experience from "@/components/experience/Experience";
 import Hero from "@/components/hero/Hero";
 import Proyects from "@/components/proyects/Proyects";
 import Skills from "@/components/skills/Skills";
-import CircularMenu from "@/components/ui/CircularMenu";
+import CircularMenu from "@/components/circularMenu/CircularMenu";
 import { Divider } from "@nextui-org/react";
 
 export default function Home() {

@@ -86,7 +86,7 @@ export function FadeDown() {
       {/* Boton*/}
       <motion.div
         variants={FADE_LINK_BUTTON}
-        className=" mt-8 rounded-full cursor-pointer px-6 py-3 sm:px-8 sm:py-3 lg:px-8 lg:py-3 xl:px-6 xl:py-2 border-2 border-white text-white hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all"
+        className=" mt-8 rounded-full cursor-pointer px-6 py-3 sm:px-8 sm:py-3 lg:px-8 lg:py-3 xl:px-6 xl:py-2 border-[1px] border-white text-white hover:bg-[#CC005F] hover:border-[#CC005F] hover:text-white transition-all"
       >
         <Link
           to="about"
