@@ -57,7 +57,7 @@ const ProyectCard = ({
         </CardHeader>
 
         <CardBody className="flex flex-col pt-0">
-          <p className="font-montserrat text-justify pb-6">{description}</p>
+          <p className="font-montserrat text-justify pb-6 text-[18px]">{description}</p>
 
           <div className="flex flex-wrap gap-3">
             {/* Chips */}

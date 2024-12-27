@@ -24,7 +24,7 @@ const Proyects = () => {
 
       
       <Image
-        className="rocket w-[120px] lg:w-[150px]"
+        className="rocket w-[100px] lg:w-[100px]"
         alt="rocketIcon"
         src={rocket}
         width={150}

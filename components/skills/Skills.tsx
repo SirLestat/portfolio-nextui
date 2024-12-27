@@ -4,14 +4,14 @@ import { images } from "./iconsData";
 
 const Skills = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-8 ">
-      <Image alt="CodeIcon" src={code} width={150} height={150} className="w-[120px] lg:w-[150px]"/>
-      <p className="font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F] pt-4 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center px-8  ">
+      <Image alt="CodeIcon" src={code} width={150} height={150} className="w-[120px] lg:w-[120px]"/>
+      <p className="font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F]  text-center">
         SKILLS
       </p>
 
       <div
-        className="grid grid-cols-[95px_95px_95px] grid-rows-[auto_auto_auto] gap-4 
+        className="grid grid-cols-[95px_95px_95px] grid-rows-[auto_auto_auto] gap-6 
         lg:grid-cols-[130px_130px_130px_130px_130px] lg:grid-rows-[auto_auto_auto] lg:gap-8 pt-8"
       >
         {images.map((icon, index) => (
