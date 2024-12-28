@@ -6,6 +6,7 @@ import Proyects from "@/components/proyects/Proyects";
 import Skills from "@/components/skills/Skills";
 import CircularMenu from "@/components/circularMenu/CircularMenu";
 import { Divider } from "@nextui-org/react";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 }

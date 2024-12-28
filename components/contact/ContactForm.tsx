@@ -39,7 +39,7 @@ const ContactForm = () => {
       onSubmit={onSubmit}
     >
       {({ errors, touched, isValid, dirty }) => (
-        <Form className="w-full max-w-[900px] space-y-6 px-4">
+        <Form className="w-full max-w-[900px] space-y-14 px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-[180px] gap-10 ">
             <Field name="name">
               {({ field }: FieldProps) => {
