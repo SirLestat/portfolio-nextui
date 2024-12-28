@@ -1,7 +1,7 @@
 import Image from "next/image";
 import arroba from "/public/icons/title/arroba.png";
 import ContactForm from "./ContactForm";
-import { Divider } from "@nextui-org/react";
+
 
 const Contact = () => {
   return (

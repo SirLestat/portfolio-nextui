@@ -1,6 +1,6 @@
 import * as Yup from "yup";
 import { Formik, Form, Field, FieldProps } from "formik";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Input, Textarea } from "@nextui-org/react";
 import inputStyles from "./inputStyles";
 
 interface FormValues {

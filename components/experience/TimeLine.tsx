@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/experience/ui/timeline";
-import { text } from "stream/consumers";
+
 
 export function TimelineUi() {
   const imageStyle =

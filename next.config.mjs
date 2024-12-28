@@ -11,7 +11,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'assets.aceternity.com', // Agregado el hostname
+        hostname: 'assets.aceternity.com', 
         port: '',
         pathname: '/**',
       },

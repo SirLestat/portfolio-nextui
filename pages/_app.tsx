@@ -5,36 +5,36 @@ import { BackgroundBeams } from "@/components/hero/BackgroundBeams";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    const handleContextMenu = (event: MouseEvent) => {
-      event.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handleContextMenu = (event: MouseEvent) => {
+  //     event.preventDefault();
+  //   };
 
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (
-        (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl+Shift+I
-        (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl+Shift+J
-        (event.ctrlKey && event.key === "U") || // Ctrl+U
-        (event.key === "F12") // F12
-      ) {
-        event.preventDefault();
-      }
-    };
+  //   const handleKeyDown = (event: KeyboardEvent) => {
+  //     if (
+  //       (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl+Shift+I
+  //       (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl+Shift+J
+  //       (event.ctrlKey && event.key === "U") || // Ctrl+U
+  //       (event.key === "F12") // F12
+  //     ) {
+  //       event.preventDefault();
+  //     }
+  //   };
 
-    const handleSelectStart = (event: Event) => {
-      event.preventDefault();
-    };
+  //   const handleSelectStart = (event: Event) => {
+  //     event.preventDefault();
+  //   };
 
-    document.addEventListener("contextmenu", handleContextMenu);
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("selectstart", handleSelectStart);
+  //   document.addEventListener("contextmenu", handleContextMenu);
+  //   document.addEventListener("keydown", handleKeyDown);
+  //   document.addEventListener("selectstart", handleSelectStart);
 
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("selectstart", handleSelectStart);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //     document.removeEventListener("selectstart", handleSelectStart);
+  //   };
+  // }, []);
 
   return (
     <NextUIProvider className="bg-background min-h-screen select-none">

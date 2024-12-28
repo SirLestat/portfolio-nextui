@@ -54,7 +54,7 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
 
-        success:   "#00c5ff",// Color de éxito personalizado
+        success:   "#00c5ff",
         
         
       },
