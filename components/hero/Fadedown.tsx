@@ -73,7 +73,7 @@ export function FadeDown() {
         )}
         variants={FADE_DOWN_ANIMATION_VARIANTS}
       >
-        Name Lastname
+        Alejandro Santiago
         {/* subtitulo */}
         <motion.p
           className="mt-8 md:mt-0 sm:mt-0 lg:mt-0 xl:mt-0 leading-relaxed text-[18px] sm:text-[15px] md:text-[20px] lg:text-[25px] xl:text-[25px] justify-center flex font-ledger font-normal"

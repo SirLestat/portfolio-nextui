@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
@@ -45,12 +44,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-8 px-4 md:px-8 lg:px-10">
-        <h2 className="justify-center text-[18px] mb-4 text-white dark:text-white max-w-4xl font-bold">
-          Changelog from my journey TY
-        </h2>
-        <p className="text-white dark:text-neutral-300 text-[18px] max-w-sm font-montserrat">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+        {/* <h2 className="justify-center text-[18px] mb-4 text-white dark:text-white max-w-4xl font-bold">
+          Momentos Destacados en Mi Carrera Profesional 🚀
+        </h2> */}
+        <p className="text-white dark:text-neutral-300 text-[18px] max-w-[700px] font-montserrat text-justify">
+          A lo largo de mi trayectoria profesional, he tenido la oportunidad de
+          trabajar en proyectos que han sido fundamentales para mi crecimiento.
+          A continuación, comparto una línea de tiempo con los hitos más
+          relevantes y las experiencias que han marcado mi camino.
         </p>
       </div>
 

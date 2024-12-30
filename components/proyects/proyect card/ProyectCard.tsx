@@ -36,7 +36,7 @@ const ProyectCard = ({
         className="bg-[#2424244f] flex w-full sm:w-[90%] md:w-[90%] lg:w-[90%] xl:w-[90%] border border-[#4A4A4A] p-5 rounded-[50px] transition-transform duration-100 ease-in-out hover:scale-[102%] overflow-hidden"
       >
         {/* Contenedor de imagen */}
-        <div className="-m-5 rounded-t-[50px] overflow-hidden h-[180px] relative flex">
+        <div className="-m-5 rounded-t-[50px] overflow-hidden h-[200px] relative flex">
           <Image
             src={src}
             alt="Card Image"
@@ -79,6 +79,8 @@ const ProyectCard = ({
           </div>
         </CardBody>
       </Card>
+
+      
     </div>
   );
 };
