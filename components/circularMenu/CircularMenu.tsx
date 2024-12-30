@@ -2,7 +2,7 @@
 
 import rocket1 from "/public/icons/title/rocket1.png";
 import { useState, useEffect } from "react";
-import { Menu, Home, Mail, User } from "lucide-react";
+import {Menu} from "lucide-react";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import user from "/public/icons/title/user.png";
