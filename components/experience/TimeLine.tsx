@@ -21,6 +21,20 @@ export function TimelineUi() {
         <div>
           <p className="font-montserrat font-bold text-[18px] ">CFE TEIT </p>
           <br />
+          <br />
+          <br />
+          <div className={containerStyle}>
+            <Image
+              src={cfeteit}
+              alt="startup template"
+              width={500}
+              height={500}
+              className="w-auto h-auto "
+            />
+          </div>
+          <br />
+          <br />
+
           <p className={textStyle}>
             En CFE TEIT, he adquirido experiencia en el desarrollo de
             aplicaciones web utilizando tecnologías modernas como JavaScript,
@@ -44,15 +58,6 @@ export function TimelineUi() {
             ofrecen una experiencia de usuario excepcional. 🚀💼🌟
           </p>
           <br />
-          <div className={containerStyle}>
-            <Image
-              src={cfeteit}
-              alt="startup template"
-              width={500}
-              height={500}
-              className="w-auto h-auto "
-            />
-          </div>
         </div>
       ),
     },
@@ -61,7 +66,16 @@ export function TimelineUi() {
       content: (
         <div>
           <p className="font-montserrat font-bold text-[18px]">PILARES </p>
-          <br />
+
+          <div className={containerStyle}>
+            <Image
+              src={pilares}
+              alt="hero template"
+              width={500}
+              height={500}
+              className="w-auto h-auto "
+            />
+          </div>
           <p className={textStyle}>
             Tuve la oportunidad de impartir clases de HTML, CSS, SQL y Python,
             cubriendo los lenguajes fundamentales para el desarrollo web y el
@@ -86,16 +100,6 @@ export function TimelineUi() {
             de aplicación móvil para mejorar la eficiencia del transporte
             público en la Ciudad de México.
           </p>
-
-          <div className={containerStyle}>
-            <Image
-              src={pilares}
-              alt="hero template"
-              width={500}
-              height={500}
-              className="w-auto h-auto "
-            />
-          </div>
         </div>
       ),
     },
