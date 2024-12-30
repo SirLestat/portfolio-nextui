@@ -77,21 +77,30 @@ const Proyects = () => {
 
         {/* Card 3 */}
         <ProyectCard
-          description="Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-          src={card1}
-          title="TO DO LIST"
+          description="Esta página muestra mis proyectos de manera clara y atractiva, con un diseño moderno y optimizado para todos los dispositivos. Incluye descripciones concisas y enlaces directos a demostraciones o repositorios, permitiendo conocer mi trabajo y habilidades."
+          src="https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?t=st=1735569787~exp=1735573387~hmac=184223bc4e421cc1e9e8214c38f9afe817b314494fe035c4fcf8bfab7aa1ea29&w=1800"
+          title="PORTFOLIO"
           technologies={[
-            { label: "React", borderColor: "#58C4DC", shadowColor: "#58C4DC" },
             {
-              label: "Material UI",
-              borderColor: "#0073E6",
-              shadowColor: "#0073E6",
+              label: "Next.js",
+              borderColor: "#FFFFFF",
+              shadowColor: "#FFFFFF",
             },
-            { label: "Formik", borderColor: "#172B4D", shadowColor: "#172B4D" },
+            {
+              label: "Tailwind CSS",
+              borderColor: "#38BDF8",
+              shadowColor: "#38BDF8",
+            },
+            {
+              label: "Typescript",
+              borderColor: "#3178C6",
+              shadowColor: "#3178C6",
+            },
+            { label: "Figma", borderColor: "#F35424", shadowColor: "#F35424" },
           ]}
           links={{
-            livePreviewUrl: "https://example.com/live-preview-3",
-            codeUrl: "https://github.com/user/repository-3",
+            livePreviewUrl: "https://portfolio-alejandro-santiago.vercel.app/",
+            codeUrl: "https://github.com/SirLestat/portfolio-nextui",
           }}
         />
       </div>

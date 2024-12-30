@@ -3,7 +3,7 @@ import arroba from "/public/icons/title/arroba.png";
 import github from "/public/icons/footer/github.png";
 import linkedin from "/public/icons/footer/linkedin.png";
 import mail from "/public/icons/footer/mail.png";
-import whatsapp from "/public/icons/footer/whatsapp1.png"; 
+import whatsapp from "/public/icons/footer/whatsapp1.png";
 
 const Contact = () => {
   return (
