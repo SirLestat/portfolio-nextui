@@ -47,7 +47,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {/* <h2 className="justify-center text-[18px] mb-4 text-white dark:text-white max-w-4xl font-bold">
           Momentos Destacados en Mi Carrera Profesional 🚀
         </h2> */}
-        <p className="text-white dark:text-neutral-300 text-[18px] max-w-[700px] font-montserrat text-justify">
+        <p className="text-white dark:text-neutral-300 text-[18px] font-montserrat text-justify">
           A lo largo de mi trayectoria profesional, he tenido la oportunidad de
           trabajar en proyectos que han sido fundamentales para mi crecimiento.
           A continuación, comparto una línea de tiempo con los hitos más
