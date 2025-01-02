@@ -13,7 +13,7 @@ const Experience = () => {
         className="w-[100px] lg:w-[100px]"
       />
       <p className="font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F] pt-4 text-center">
-        EXPERIENCE
+        EXPERIENCIA
       </p>
       <TimelineUi />
     </div>

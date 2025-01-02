@@ -10,15 +10,12 @@ export const images: imageProps[] = [
   },
   { src: "/icons/skills/cssIcon.png", name: "CSS" },
   { src: "/icons/skills/reactIcon3.png", name: "REACT" },
-  { src: "/icons/skills/nextjs2.png", name: "NEXT" },
+  { src: "/icons/skills/nextjs2.png", name: "NEXT.JS" },
   {
     src: "/icons/skills/javaScriptIcon.png",
     name: "JAVASCRIPT",
   },
-  {
-    src: "/icons/skills/typescript3.png",
-    name: "TYPESCRIPT",
-  },
+
   { src: "/icons/skills/figmaIcon2.png", name: "FIGMA" },
   {
     src: "/icons/skills/vsCodeIcon.png",
@@ -31,6 +28,10 @@ export const images: imageProps[] = [
 ];
 
 export const learning: imageProps[] = [
+  {
+    src: "/icons/skills/typescript3.png",
+    name: "TYPESCRIPT",
+  },
   {
     src: "/icons/skills/postgresql.png",
     name: "POSTGRESQL",

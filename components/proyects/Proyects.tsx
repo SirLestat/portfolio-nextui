@@ -31,7 +31,7 @@ const Proyects = () => {
         height={150}
       />
       <h2 className=" font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F]  text-center">
-        PROJECTS
+        PROYECTOS
       </h2>
 
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-xl mx-auto">
@@ -101,6 +101,33 @@ const Proyects = () => {
           links={{
             livePreviewUrl: "https://portfolio-alejandro-santiago.vercel.app/",
             codeUrl: "https://github.com/SirLestat/portfolio-nextui",
+          }}
+        />
+
+        <ProyectCard
+          description=""
+          src="/card/indevelopment.png"
+          title="POKEMON APP"
+          technologies={[
+            {
+              label: "Next.js",
+              borderColor: "#FFFFFF",
+              shadowColor: "#FFFFFF",
+            },
+            {
+              label: "Tailwind CSS",
+              borderColor: "#38BDF8",
+              shadowColor: "#38BDF8",
+            },
+            {
+              label: "Typescript",
+              borderColor: "#3178C6",
+              shadowColor: "#3178C6",
+            },
+          ]}
+          links={{
+            livePreviewUrl: "Coming soon",
+            codeUrl: "Coming soon",
           }}
         />
       </div>

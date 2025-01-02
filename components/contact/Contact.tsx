@@ -18,10 +18,10 @@ const Contact = () => {
         />
       </div>
       <h1 className="text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-montserratAlt text-center font-semibold text-[#CC005F]">
-        Contact
+        CONTACTO
       </h1>
       <div className="border border-[#CC005F] rounded-br-[30px] rounded-tl-[30px] pt-[5px] pb-[5px] pl-[25px] pr-[25px] font-montserrat font-medium text-[25px] mb-20 lg:mb-24 mt-8 hover:border-[#CC005F]">
-        Send Me A Message
+      Envíame un Mensaje
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
         <a
@@ -82,7 +82,7 @@ const Contact = () => {
         download
         className="mt-20 w-full max-w-max rounded-full bg-transparent text-white border-[#CC005F] border-[1px] hover:bg-[#CC005F] font-semibold font-montserrat px-6 py-2 transition-all duration-200 ease-in-out mb-8"
       >
-        Download CV
+        Descargar CV
       </a>
     </div>
   );

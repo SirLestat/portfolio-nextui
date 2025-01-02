@@ -13,7 +13,7 @@ const Skills = () => {
         className="w-[120px] lg:w-[120px]"
       />
       <p className="font-montserratAlt text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-semibold text-[#CC005F]  text-center">
-        SKILLS
+        HABILIDADES
       </p>
 
       <div

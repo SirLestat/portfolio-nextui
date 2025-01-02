@@ -14,7 +14,7 @@ const ProfileImg = () => {
         />
       </div>
       <p className="text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-montserratAlt text-center font-semibold text-[#CC005F] pt-8">
-        ABOUT
+        SOBRE MÍ
       </p>
     </div>
   );
