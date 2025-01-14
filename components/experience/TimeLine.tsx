@@ -48,9 +48,8 @@ export function TimelineUi() {
             He trabajado en la integración de APIs utilizando herramientas como
             Insomnia y gestionado formularios complejos con Formik, asegurando
             una funcionalidad eficiente y sin errores. Además, poseo experiencia
-            en control de versiones con Git y GitHub, y en la implementación de
-            pruebas unitarias con Jest, lo que garantiza la calidad y
-            confiabilidad del software que desarrollo.
+            en control de versiones con Git y GitHub, lo que garantiza la
+            calidad y confiabilidad de las aplicaciones que desarrollo.
             <br />
             <br />
             Mi enfoque está en el desarrollo ágil, creando soluciones que no
