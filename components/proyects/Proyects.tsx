@@ -103,31 +103,27 @@ const Proyects = () => {
             codeUrl: "https://github.com/SirLestat/portfolio-nextui",
           }}
         />
-
+        {/* Card 4 */}
         <ProyectCard
-          description=""
-          src="/card/indevelopment.png"
-          title="POKEMON APP"
+          description="Aplicación web para crear y gestionar boletos personalizados para eventos tecnológicos. Desarrollada con React Router, Tailwind CSS y Vite, con un enfoque mobile-first que garantiza un diseño moderno y responsive. 🚀 Ideal para una experiencia profesional y accesible desde cualquier dispositivo."
+          src="/card/ticket7.png"
+          title="TICKET CONF"
           technologies={[
             {
-              label: "Next.js",
-              borderColor: "#FFFFFF",
-              shadowColor: "#FFFFFF",
+              label: "React",
+              borderColor: "#58C4DC",
+              shadowColor: "#58C4DC",
             },
             {
               label: "Tailwind CSS",
               borderColor: "#38BDF8",
               shadowColor: "#38BDF8",
             },
-            {
-              label: "Typescript",
-              borderColor: "#3178C6",
-              shadowColor: "#3178C6",
-            },
+            { label: "Vite", borderColor: "#B243FE", shadowColor: "#FFC921" },
           ]}
           links={{
-            livePreviewUrl: "Coming soon",
-            codeUrl: "Coming soon",
+            livePreviewUrl: "https://code-conf-ticket.vercel.app/",
+            codeUrl: "https://github.com/SirLestat/CodeConfTicket",
           }}
         />
       </div>
