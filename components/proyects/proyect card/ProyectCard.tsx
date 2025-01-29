@@ -10,8 +10,8 @@ interface ChipProps {
 }
 
 interface ProyectLinkProps {
-  livePreviewUrl: string;
-  codeUrl: string;
+  livePreviewUrl?: string;
+  codeUrl?: string;
 }
 
 interface ProyectCardProps {
@@ -57,7 +57,9 @@ const ProyectCard = ({
         </CardHeader>
 
         <CardBody className="flex flex-col pt-0">
-          <p className="font-montserrat text-justify pb-6 text-[18px]">{description}</p>
+          <p className="font-montserrat text-justify pb-6 text-[18px]">
+            {description}
+          </p>
 
           <div className="flex flex-wrap gap-3">
             {/* Chips */}
@@ -79,11 +81,8 @@ const ProyectCard = ({
           </div>
         </CardBody>
       </Card>
-
-      
     </div>
   );
 };
 
 export default ProyectCard;
-

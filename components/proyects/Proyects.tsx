@@ -126,6 +126,18 @@ const Proyects = () => {
             codeUrl: "https://github.com/SirLestat/CodeConfTicket",
           }}
         />
+        <ProyectCard
+          description="Rintel es un prototipo de app móvil creada en el Hackatón Mictlán, organizado por PILARES, para optimizar las rutas, tráfico y horarios del transporte público en zonas con tránsito complicado. Además, la app permite monitorear unidades en tiempo real, reportar incidentes y solicitar ayuda, mejorando la seguridad de pasajeros y operadores."
+          src="/card/rintel2.png"
+          title="RINTEL"
+          technologies={[
+            { label: "Figma", borderColor: "#F35424", shadowColor: "#F35424" },
+          ]}
+          links={{
+            livePreviewUrl:
+              "https://www.figma.com/proto/t9QYoGwtffbe5zJ7jrjHoU/Hackaton-3.0?node-id=3-39&p=f&t=nS1lLcOZ6CTczJZJ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A39",
+          }}
+        />
       </div>
     </div>
   );

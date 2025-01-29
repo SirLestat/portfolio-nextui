@@ -3,8 +3,8 @@ import linkIcon from "/public/icons/card/expand-arrows.png";
 import gitHubeIcon from "/public/icons/card/github.png";
 
 interface ProyectLinkProps {
-  livePreviewUrl: string;
-  codeUrl: string;
+  livePreviewUrl?: string;
+  codeUrl?: string;
 }
 
 const ProyectLink = ({ livePreviewUrl, codeUrl }: ProyectLinkProps) => {
