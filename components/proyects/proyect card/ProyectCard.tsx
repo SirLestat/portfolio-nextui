@@ -29,8 +29,21 @@ const ProyectCard = ({
   technologies,
   links,
 }: ProyectCardProps) => {
+  // Funciones para bloquear/desbloquear el scroll de la página
+  const disableScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
+
+  const enableScroll = () => {
+    document.body.style.overflow = "auto";
+  };
+
   return (
-    <div className="flex transform scale-90 md:scale-75 lg:scale-90 transition-transform duration-300 justify-center">
+    <div
+      className="flex transform scale-90 md:scale-75 lg:scale-90 transition-transform duration-300 justify-center"
+      onMouseEnter={disableScroll} // Bloquear el scroll al poner el mouse sobre la tarjeta
+      onMouseLeave={enableScroll} // Restaurar el scroll al quitar el mouse
+    >
       <Card
         shadow="none"
         className="bg-[#2424244f] flex w-full sm:w-[90%] md:w-[90%] lg:w-[90%] xl:w-[90%] border border-[#4A4A4A] p-5 rounded-[50px] transition-transform duration-100 ease-in-out hover:scale-[102%] overflow-hidden hover:border-[#CC005F]"
@@ -57,11 +70,18 @@ const ProyectCard = ({
         </CardHeader>
 
         <CardBody className="flex flex-col pt-0 flex-grow">
-          <p className="font-montserrat text-justify pb-6 text-[18px]">
+          <p
+            className="font-montserrat text-justify pb-6 text-[18px] overflow-y-auto max-h-[200px]"
+            style={{
+              WebkitOverflowScrolling: "touch", // Permite desplazamiento suave en dispositivos móviles
+              scrollbarWidth: "none", // Para Firefox
+              msOverflowStyle: "none", // Para Internet Explorer y Edge
+            }}
+          >
             {description}
           </p>
 
-          <div className="flex flex-wrap gap-3 ">
+          <div className="flex flex-wrap gap-3 mt-5">
             {/* Chips */}
             {technologies.map((tech) => (
               <TechnologyChip
@@ -73,7 +93,7 @@ const ProyectCard = ({
             ))}
           </div>
 
-          <div className="flex-col items-end mt-auto">
+          <div className="items-end flex-col mt-auto">
             <ProyectLink
               codeUrl={links.codeUrl}
               livePreviewUrl={links.livePreviewUrl}

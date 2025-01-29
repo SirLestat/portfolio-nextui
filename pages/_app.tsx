@@ -25,11 +25,35 @@ export default function App({ Component, pageProps }: AppProps) {
       event.preventDefault();
     };
 
+    // Ocultar la barra de desplazamiento visualmente pero permitir el desplazamiento
+    document.body.style.overflow = "auto"; // Asegura que el desplazamiento sigue siendo posible
+    document.body.style.scrollbarWidth = "none"; // Para Firefox
+    
+
+    // Esto oculta la barra de desplazamiento en Chrome, Safari, Edge
+    const style = document.createElement('style');
+    style.innerHTML = `
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Añadir los event listeners
     document.addEventListener("contextmenu", handleContextMenu);
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("selectstart", handleSelectStart);
 
     return () => {
+      // Restaurar el comportamiento predeterminado de la barra de desplazamiento
+      document.body.style.overflow = "auto";
+      document.body.style.scrollbarWidth = "auto"; // Restaurar el valor original para Firefox
+     
+
+      // Eliminar el estilo para ocultar la barra de desplazamiento
+      document.head.removeChild(style);
+
+      // Eliminar los event listeners
       document.removeEventListener("contextmenu", handleContextMenu);
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("selectstart", handleSelectStart);
