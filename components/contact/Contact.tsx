@@ -64,7 +64,7 @@ const Contact = () => {
           <p className="font-montserratAlt font-semibold mt-2">Github</p>
         </a>
         <a
-          href="https://www.linkedin.com/in/edgar-alejandro-santiago-p%C3%A9rez-baaa1324a/"
+          href="https://www.linkedin.com/in/alejandrosantiagodev/"
           target="_blank"
           className="flex flex-col items-center transition-transform duration-150 ease-in-out hover:scale-[110%]"
         >
