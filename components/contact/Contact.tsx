@@ -20,7 +20,7 @@ const Contact = () => {
       <h1 className="text-[40px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[50px] font-montserratAlt text-center font-semibold text-[#CC005F]">
         CONTACTO
       </h1>
-      <div className="border border-[#CC005F] rounded-br-[30px] rounded-tl-[30px] pt-[5px] pb-[5px] pl-[25px] pr-[25px] font-montserrat font-medium text-[25px] mb-20 lg:mb-24 mt-8 hover:border-[#CC005F]">
+      <div className="border border-[#CC005F] rounded-br-[30px] rounded-tl-[30px] pt-[5px] pb-[5px] pl-[25px] pr-[25px] font-montserrat font-medium text-[25px] mb-20 lg:mb-24 mt-8 hover:bg-[#CC005F]">
         Envíame un Mensaje
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
