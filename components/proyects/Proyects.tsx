@@ -57,7 +57,7 @@ const Proyects = () => {
 
         {/* Card 2 */}
         <ProyectCard
-          description="Proyecto interactivo para explorar álbumes fotográficos con una interfaz limpia y amigable. Consume datos de la API de JSONPlaceholder, utiliza modales implementados con React Portals para mejorar la interacción y React Router para gestionar rutas dinámicas."
+          description="Proyecto interactivo para explorar álbumes fotográficos con una interfaz limpia y amigable. Consume datos de la API de Lorem Picsum, utiliza modales implementados con React Portals para mejorar la interacción y React Router para gestionar rutas dinámicas."
           src={spaimage}
           title="ALBUM VIEW"
           technologies={[
@@ -76,34 +76,6 @@ const Proyects = () => {
         />
 
         {/* Card 3 */}
-        <ProyectCard
-          description="Esta página muestra mis proyectos de manera clara y atractiva, con un diseño moderno y optimizado para todos los dispositivos. Incluye descripciones concisas y enlaces directos a demostraciones o repositorios, permitiendo conocer mi trabajo y habilidades."
-          src="https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?t=st=1735569787~exp=1735573387~hmac=184223bc4e421cc1e9e8214c38f9afe817b314494fe035c4fcf8bfab7aa1ea29&w=1800"
-          title="PORTFOLIO"
-          technologies={[
-            {
-              label: "Next.js",
-              borderColor: "#FFFFFF",
-              shadowColor: "#FFFFFF",
-            },
-            {
-              label: "Tailwind CSS",
-              borderColor: "#38BDF8",
-              shadowColor: "#38BDF8",
-            },
-            {
-              label: "Typescript",
-              borderColor: "#3178C6",
-              shadowColor: "#3178C6",
-            },
-            { label: "Figma", borderColor: "#F35424", shadowColor: "#F35424" },
-          ]}
-          links={{
-            livePreviewUrl: "https://portfolio-alejandro-santiago.vercel.app/",
-            codeUrl: "https://github.com/SirLestat/portfolio-nextui",
-          }}
-        />
-        {/* Card 4 */}
         <ProyectCard
           description="Aplicación web para crear y gestionar boletos personalizados para eventos tecnológicos. Desarrollada con React Router, Tailwind CSS y Vite, con un enfoque mobile-first que garantiza un diseño moderno y responsive. 🚀 Ideal para una experiencia profesional y accesible desde cualquier dispositivo."
           src="/card/ticket7.png"
