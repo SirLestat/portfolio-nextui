@@ -57,7 +57,7 @@ const Proyects = () => {
 
         {/* Card 2 */}
         <ProyectCard
-          description="Proyecto interactivo para explorar álbumes fotográficos con una interfaz limpia y amigable. Consume datos de la API de Lorem Picsum, utiliza modales implementados con React Portals para mejorar la interacción y React Router para gestionar rutas dinámicas."
+          description="Este proyecto interactivo ofrece una experiencia inmersiva para explorar álbumes de fotos en línea. Desarrollado con React, la aplicación consume datos de la API de Lorem Picsum, brindando acceso a una amplia colección de imágenes de alta calidad. La interfaz, intuitiva y fácil de usar, permite a los usuarios navegar sin problemas entre álbumes y fotografías. Los modales, implementados con React Portals, mejoran la interacción al proporcionar una vista detallada de cada imagen, incluyendo información relevante. La navegación fluida se logra gracias a React Router, que gestiona las rutas dinámicas de la aplicación. Para una experiencia de usuario completa, se han implementado skeletons que simulan la estructura de las imágenes durante la carga de datos, asegurando una transición visual suave. Además, se manejan errores y se muestran imágenes de marcador de posición en caso de que una imagen no esté disponible, manteniendo la integridad visual de la interfaz."
           src={spaimage}
           title="ALBUM VIEW"
           technologies={[
